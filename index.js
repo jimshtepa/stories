@@ -36,7 +36,7 @@ const navigateStories = (direction) => {
       return;
     } else if (firstItemInUserStory === story && hasPrevUserStory) {
       state.current_story =
-        story.parentElement.previousElementSibling.lastElementChild;
+        story.parentElement.previousElementSibling.firstElementChild;
       story.parentElement.previousElementSibling.scrollIntoView({
         behavior: 'smooth',
       });
